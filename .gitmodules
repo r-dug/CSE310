@@ -1,0 +1,3 @@
+[submodule "RINGS2"]
+	path = RINGS2
+	url = https://github.com/r-dug/RINGS.git
