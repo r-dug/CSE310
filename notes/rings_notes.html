@@ -1,0 +1,163 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Discrete Mathematics - Rings</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            overflow-x: auto;
+        }
+        a {
+            color: #0645ad;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Discrete Mathematics - Rings</h1>
+    <section>
+        <h2>Lecture Notes on Rings</h2>
+        <article>
+            <h3>Introduction to Abstract Mathematics</h3>
+            <ul>
+                <li>Abstract mathematics focuses on operations within a set.</li>
+                <li>A set exhibits <strong>closure</strong> if, when you perform an operation (addition, subtraction, multiplication, division) on any two elements within the set, the result is also an element of the set.</li>
+                <li>To show a set is <em>not</em> closed, you only need one counter example.</li>
+                <li>
+                    <strong>Example:</strong> Real numbers are not closed under division because you cannot divide by zero.
+                    <ul>
+                        <li><code>Real Numbers / Division: NOT closed</code></li>
+                    </ul>
+                </li>
+                <li>
+                    To demonstrate closure, an abstract construction that represents any arbitrary values is employed.
+                </li>
+            </ul>
+        </article>
+        <article>
+            <h3>Properties of Sets in Mathematics</h3>
+            <ul>
+                <li>A <strong>group</strong> has more properties added to sets that allow for powerful concepts in mathematics, specifically for the operations of addition and multiplication.</li>
+                <li>
+                    <strong>Definition of a Group (G):</strong>
+                    <ul>
+                        <li>An operation must be defined within the group.</li>
+                        <li>Sets have closure under the operation.</li>
+                        <li>Groups have an additive inverse for each element.</li>
+                        <li>Groups have an additive identity element.</li>
+                        <li>
+                            <strong>Example:</strong> If <code>G</code> is a group under addition, then for any element <code>a</code> in <code>G</code>, the additive inverse is <code>-a</code> and the additive identity is <code>0</code>.
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    Inverses are unique to each element within the group and come in pairs.
+                </li>
+                <li>
+                    If any property fails, the group fails to be considered as such.
+                </li>
+            </ul>
+        </article>
+        <article>
+            <h3>Defining Addition and Multiplication in Groups</h3>
+            <ul>
+                <li>Operations such as addition and multiplication can be abstractly defined and do not necessarily relate to standard arithmetic as we know it.</li>
+                <li>For instance, in computing, binary addition follows the exclusive or (XOR) operation, while binary multiplication follows logical AND operations.</li>
+                <li>
+                    <strong>Identity and Inverse in Groups:</strong>
+                    <ul>
+                        <li>Additive identity: Adding zero to any number returns the original number.</li>
+                        <li>Additive inverse: Adding a number to its inverse (negative counterpart) returns the additive identity (zero).</li>
+                        <li>Example for Real Numbers under addition: <code>3 + (-3) = 0</code></li>
+                    </ul>
+                </li>
+                <li>
+                    Real numbers are a group under addition but not under multiplication due to the element zero lacking a multiplicative inverse.
+                </li>
+            </ul>
+        </article>
+        <article>
+            <h3>Identification of Groups Using Real Numbers</h3>
+            <ul>
+                <li>Real numbers under addition is a group.</li>
+                <li>Natural numbers under addition does not form a group due to lack of identity.</li>
+                <li>Integers under addition do form a group.</li>
+                <li>
+                    <strong>THIS WILL BE ON THE EXAM:</strong> Be able to demonstrate whether a set with a given operation is a group or not.
+                </li>
+            </ul>
+        </article>
+        <article>
+            <h3>Exclusive Or and Logical AND Operations</h3>
+            <ul>
+                <li>
+                    Considering the set <code>{true, false}</code> which can also be represented as <code>{0, 1}</code>,
+                    <ul>
+                        <li>Addition defined as XOR forms a group.</li>
+                        <li>Logical AND operation does not form a group because zero does not have an inverse.</li>
+                    </ul>
+                </li>
+            </ul>
+        </article>
+        <article>
+            <h3>The Concept of Rings</h3>
+            <ul>
+                <li>
+                    A <strong>ring</strong> needs both addition and multiplication. 
+                    <ul>
+                        <li>Set <code>R</code> is a group under addition.</li>
+                        <li>Set <code>R</code> has an identity under multiplication.</li>
+                        <li>Multiplication must distribute over addition.</li>
+                    </ul>
+                </li>
+                <li>
+                    A well-known ring is <code>GF(2)</code>, also known as Galois field, which corresponds to binary arithmetic used in computing.
+                </li>
+                <li>
+                    <strong>Upcoming Lectures:</strong> The next lecture will aim to prove that <code>GF(2)</code> is a ring.
+                </li>
+            </ul>
+        </article>
+    </section>
+    <section>
+        <h2>Important Class Announcements</h2>
+        <article>
+            <h3>Exam and Presentation Schedules</h3>
+            <ul>
+                <li>ASSIGNMENT: C Exam | DUE: Wednesday, 2/21</li>
+                <li>ASSIGNMENT: C++ Exam | DUE: Monday, 4/8</li>
+                <li>ASSIGNMENT: Student ppt presentations | DUE: Monday, 4/15; Wednesday, 4/17; Monday, 4/22</li>
+            </ul>
+            <h3>On the Exam</h3>
+            <ul>
+                <li>THIS WILL BE ON THE EXAM: The concept of closure in sets.</li>
+                <li>THIS WILL BE ON THE EXAM: Identification and characteristics of a group.</li>
+            </ul>
+        </article>
+    </section>
+    <section>
+        <h2>Further Reading and Resources</h2>
+        <ul>
+            <li>
+                <a href="https://en.wikipedia.org/wiki/Group_(mathematics)" target="_blank">Group Theory</a>
+            </li>
+            <li>
+                <a href="https://en.wikipedia.org/wiki/Ring_(mathematics)" target="_blank">Ring Theory</a>
+            </li>
+            <li>
+                <a href="https://en.wikipedia.org/wiki/Galois_field" target="_blank">Galois Fields (GF)</a>
+            </li>
+        </ul>
+    </section>
+</body>
+</html>
+```
+
+These notes provide an organized and formatted encapsulation of the concepts explained by the professor during the lecture on Rings in discrete mathematics. They cover key mathematical concepts, the properties and rules to identify groups and rings, examples in context, and assignments and exam notes for students to focus on as study guidelines. Further reading links are provided to explore the topics deeper.

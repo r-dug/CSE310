@@ -1,0 +1,3194 @@
+all right so today's lecture we're going
+to cover abstract mathematics the last
+lecture covered what operations on a set
+specifically we had one thing that we
+were covering and it was
+called closure who in here could
+summarize closure for
+
+me that is that that is stated as best
+anybody could State good job when you
+take two elements of the set you
+performal operation and so far all we
+did was just addition subtraction
+multiplication division right you take
+two objects in the set apply that
+operation to them you should get back
+another element of the set correct now
+does that mean that you pick two and it
+goes in there or does it have to mean
+that for any two that you do it has to
+map back to Something in the set does
+everybody see that to show that
+something is not closed all you had to
+do is show a counter one counter example
+where it failed right we said that the
+real numbers is not closed under
+division because of one element what is
+that zero can you define can you divide
+anything by
+Zero no what does that mean that means
+undefined error that means you can't
+consider that right don't say that
+that's Infinity because that's when
+you're talking about limit where that's
+happening something over zero including
+0 divid 0 is undefined so out of that
+entire very dense infinite set one
+element causes it to fail does that make
+sense so to show something is not closed
+you only have to show one counter
+example do you have to give two do you
+have to give three do you have to give
+an explanation you just show one counter
+example where it fails to show that it
+is closed is sometimes a bit hard
+because you have to make an abstract
+statement to where you're not using
+specific values but you're using a
+construction that represent any
+arbitrary two values you do that
+construction and you show that it's in
+the set does that make sense so how many
+of you people remember that last time we
+said why is it that the rationals are
+closed under addition and we kind of
+made the argument that it works for
+subtraction too why is it closed under
+addition remember what we said we picked
+two elements represented them as
+fractions we described that this is a
+fraction two integers we found a common
+denominator kind of abstractly added
+them together made an argument that it's
+still a fraction of two integers where
+the denominator is not zero and so it
+must have been another rational number
+can anybody just by quickly me saying it
+does everybody remember that what I
+would expect is something like that to
+may have to be done on a test everybody
+gets a little upset about that because a
+lot of you have already sent me a slack
+notification saying I don't know if I
+could have come off of that on the fly
+on my own
+fortunately I think as an engineer I'm
+more interested about what you can do
+when you have solid time to think about
+it rather than what you can do on the
+Fly uh personally I like driving across
+bridges that have been well thought out
+instead of somebody done the back of
+envelope type calculations on it right
+so what I would expect is if I have
+things like that on the exam either the
+entire exam will be take home or
+there'll be parts of it to where you get
+to take that home does that make sense
+and work on together so let me tell you
+a classic one I showed you how to do the
+how to show that the even numbers are
+closed under
+addition are the odd numbers closed
+under
+addition 3 + 3 is six it's okay if you
+noed yes that's okay six what about
+multiplication if you multiply any two
+odd numbers do you get another odd
+number before you answer do do two of
+them together before you 5 * 5 is 25 3 *
+3 is nine 1 * 1 is okay so before we
+answer we all an agreement that probably
+the odd numbers are closed under
+multiplication right because you
+multiply two odds you get another odd
+the problem is let's say the positive
+odd numbers let's ring that the problem
+is is that unless you want to go through
+and write out every possible pair of
+that entire infinite set which let's be
+clear you can't do that right you're
+going to have to make some sort of
+argument so if you really want to know
+how to prepare for the test I would walk
+into the test knowing how to do
+something like showing the odd numbers
+are closed under
+multiplication how are what is an odd
+number we said all even numbers have the
+form 2K + 1 where K is a whole
+number sorry I just gave away I just
+gave it away I gave it away didn't I
+what are the even numbers 2K where K is
+a whole number correct the odd numbers
+are 2K + one where K is a whole number
+right so if you were to take that
+argument where you take two odd numbers
+represent them as a form where they are
+2K + 1 and some other number 2K + 1 show
+them that you add together that you
+still have something two * something
+plus something else you'll be set does
+that make sense and you'll be able to
+demonstrate that so that'd be what
+something I'd expect you to be able to
+do all right so everybody's tired of me
+talking everybody's excited about this
+new Venture into abstract mathematics
+I'm excited for you guys to be excited
+about it so let's go a and get started
+so we already mentioned that we have
+things that have closure right well it
+turns out that there's a few more
+properties that we could actually add to
+these sets to where if they meet all
+these extra new properties they form a
+very powerful Concept in mathematics in
+that we're going to extend this into the
+notion of what we know as addition
+multiplication so that's what we're
+heading we're going to abstractly Define
+what it means to mathematically say you
+can add and multiply at the same time on
+a set okay but we're going to have to
+take some some minor steps on this
+
+first let's discuss what a group
+is I need to go down on
+so let's define a group a
+group G so let G be a group oh
+
+transition the screen
+over so we could say let G be a group
+okay what does it mean to be G well
+first we have
+to
+Define an operation
+just like we did last time can we even
+can we even make up an
+operation if we Define an operation that
+makes sense we could even make one up
+and it's going to appear like we may do
+that at times but we first have to
+Define an operation we often refer to
+this let G be a group where sometimes
+you'll see
+this where that means let G be a group
+under addition or consider regular
+addition does that make sense we can do
+that we have to find find an operation
+
+typically it's
+denoted AS
+Plus even if it's not the way that we
+traditionally think of plus okay let me
+ask you a question whenever you look at
+the computer whenever you look at how
+the processor adds two things in your
+computer you type in the calculator 3 +
+4 is there some way to get a number
+three to pass through a wire and then
+the number four to pass through a wire
+then all of a sudden you got this camera
+inside your processor where this brain
+sees that it's a three plus a four and
+then it says oh that's seven and then it
+pushes a seven through copper wires is
+that how that
+happens that is how that happens go back
+to the hardware class CU I don't think
+you're quite there yet right so what
+happens is is we represent those values
+as a binary stream right that goes into
+the processor what turns out that that's
+going to stay a binary stream all the
+way through that arithmetic is that a
+correct and then when it goes back to
+the screen that's when we as humans see
+the word the letter seven correct we
+push a three it sends some bit binary
+stream to the processor we say plus4 it
+sends that through the through the
+copper wires is a series of pulses on
+and off and then it goes into the
+processor it stays a stream of bits
+right and it does something well it
+turns out that when we add two bits does
+anybody know what that looks like when
+we add two bits it looks like the
+exclusive or operation where if you have
+0 + one it's one 1 plus 0 is one 0 plus
+0 is 0o 1+ one that's the problem what
+does that become zero but it carries it
+over right okay so that's the idea we
+can Define addition almost any way that
+we want to but we have to make sure it's
+consistent and understood by everybody
+when we see that symbol all right the
+set has to have
+closure what do closure mean that under
+the operation if you add two things the
+result will be another element of of the
+set correct there has to be a
+notion of something called an
+additive
+inverse there's an inverse element one
+element one element is the inverse let
+me ask you guys a question what does it
+mean to be an
+inverse H what if I
+said the additive
+inverse we also have to have something
+called an
+additive
+identity these two things kind of go
+hand in hand maybe I should have said
+identity first but let's go with this
+identity if I say an identity is
+something where if I take an operation
+and I add the identity back I get the
+other value automatically so if I take
+three and add zero what do I
+get no tricks if I take three and add
+zero what do I get three if I take four
+and add zero what do I get four if I
+take zero and add seven to it what do I
+get right wouldn't it be nice if we had
+a final exam doing that be like I know
+how to use the additive identity and if
+I take A+ zero I get a right now the
+idea is that this can be abstractly a
+little bit strange whenever we go into
+other sets does that make sense but it's
+essentially the one element inside the
+set so that way if you take a which is
+also an element of the set and you add
+this zero element that we refer to as
+the additive identity you get that a
+back no matter what value is added to it
+including itself you get that value back
+does that make sense 3 + 0 is 3 4 + 0 is
+4 0 + 5 is 5 does that make
+sense now the additive inverse every
+element has an additive inverse every
+element has an additive inverse so that
+way when you add the two together an
+element and it's additive inverse you
+get the additive identity you see how do
+you see how complic this sounds way I'm
+saying it out loud but let me say this
+what do I add to three to get
+zero3 so three is the additive identity
+of -3 -3 is the additive I'm sorry -3 is
+the additive inverse of three three is
+the additive inverse of neg3 does
+everybody see that raise your hand if
+you follow what I'm saying here right so
+this side of the room is following
+nobody on the left side is okay what is
+the additive inverse of six
+-6 that's good what is the addtive
+inverse
+of8 8 right wouldn't it be nice if we
+had a final exam doing that right okay
+now in each case how do you know what
+the additive inverse is of an element
+it's whatever you add to it to get zero
+does that make sense all
+
+right so we've defined an operation we
+have closure we have an additive inverse
+and we have an additive identity correct
+all right let's see what that buys us
+here let's
+
+consider the
+real numbers okay let's suppose that we
+have
+a that's a real
+number what is the inverse of
+a let's say consider the real numbers
+under I forgot to say this under the
+operation
+of addition every okay with that so
+which operation are we considering
+addition so a is an element inside the
+set of real numbers right what is its
+inverse remember this is what we're
+doing what is its
+inverse that is negative 8 does
+everybody see that notation how many you
+guys are familiar with that raising to
+the negative 1 essentially means inverse
+we can apply inverses to functions you
+know some functions you can plug it in
+there's an inverse function that undoes
+it that's a big thing in cryptography of
+sorts right it's a big notion in in
+hashing where you you don't have an
+inverse sometimes or an easy one at
+least okay what is the
+
+zero in the real numbers we typically
+represent the additive identity as zero
+so what is that it's just zero right
+this is the additive
+
+identity can we all agree that in this
+case 3 inverse is simply -3 how many you
+guys see that that notation is fitting
+here because when I take 3 inverse plus
+three I get the same thing as if I took
+three and did three inverse that would
+be zero does everybody agree with
+that
+okay all
+right if I add two elements of the real
+numbers do I get another real number
+back okay so I guess we got our first
+example under our belt what about if we
+have what if we have the real numbers
+
+under
+multiplication
+what is the identity in this
+
+case what is the
+identity it's one one is the identity
+under multiplication 3 * 1 is 3 4 * 1 is
+4 1 * 6 is 6 does everybody see the
+difference there under multiplic under
+addition the identity was Zero under did
+I get it right under addition the
+identity is zero under multiplication it
+is one does everybody see why got a
+question
+
+no not under
+addition all that's good question so the
+question was if you don't mind me as
+repeating it the question was is I
+thought if I raised 3 to the1 that was
+an exponent to where I essentially wrote
+one over three correct except what's the
+operation I can't consider that because
+there is no division in my world I've
+only Define the Operation to be one
+thing which is addition so what is the
+inverse what is the identity under
+addition zero so 3 to the -1 means what
+is the additive inverse of three which
+would be -3 does that make sense you
+have to be aware of the inverse what I'm
+what I'm trying to get you guys to do is
+that you grew up your entire life
+including me learning arithmetic on the
+real numbers does that make sense we're
+now scooting over into a world where
+this may be defined differently and you
+as Engineers are going to realize that
+in the complex field when you get in
+electrical engineering or whatever that
+square roots you have to be careful the
+arithmetic or that imaginary unit
+doesn't make sense right you also have
+to be aware that sometimes these
+operations are actually Boolean
+functions correct and then we have to
+kind of step away from
+
+that
+all right so in this case what do we say
+consider the real numbers under the
+operation
+of addition in this case we're dealing
+with the real numbers
+under multiplication know what the
+operation is and then you'll know what
+that negative to the negative one means
+sometimes it's only defined in a table
+and you can't do arithmetic to get there
+does that make sense there are some
+groups where you just have to look at an
+operation table to actually see what's
+happening all right so the identity is
+one anytime you multiply something by
+one you get the value back
+right if a is an element of the real
+numbers what is a inverse now we might
+look over here to our guy in the green
+shirt maybe he'll help us out with that
+what is our operation
+now yeah 1 over a because this will be 1
+over
+a because a * 1/ a is is a / a which is
+
+our multiplicative
+identity everybody agree with that now
+the only exception
+is what about this set is this a
+
+group is the real numbers under
+multiplication a
+group let's take a look up
+here in here under under
+addition do we have closure are real
+numbers closed under
+addition okay so we got closure so let's
+say this we have
+closure do we have an additive
+identity under addition what is it zero
+we have an
+identity do we have an additive inverse
+does every element have an additive
+inverse does anything fail with that no
+so every
+
+element has an inverse so we have a
+group we have closure we have our
+operation defined we have an identity
+every element has an additive inverse so
+this is a group does that make sense so
+in this case we have a
+
+group down here do we have a
+multiplicative
+identity we do don't we do we
+have does every element have an
+
+inverse if if we Define the real numbers
+under multiplication we end up with a
+problem and that zero does not have a
+what in this case is zero
+identity under
+multiplication what's the identity under
+multiplication one zero is not the
+identity in this case and zero does not
+have an inverse is there any number we
+can multiply Zero by to get
+one
+so this is a
+problem
+0o does not have an
+
+inverse we
+cannot multiply a
+number by zero and
+
+get the
+number one so tell me what property we
+fail here we fail the property of every
+element having an inverse correct does
+that make sense so we have under
+addition it's a group we have closure
+under the operation we have what
+else an identity every element has an
+inverse such that you add the two
+together you'll get the additive
+identity
+correct the real numbers on the
+multiplication fail which
+thing one element does not have an
+inverse so that means that this whole
+thing is not a group so
+not a group
+
+okay inverses do because remember what's
+the operation you have to take two
+elements from the set what's the idea of
+an inverse you have to take two elements
+from the set multiply them together and
+get something else on set because you're
+still applying the
+
+operation because we can calculate that
+so what is what do I what is the add
+what is the multiplicative what is the
+multiplicative identity of the real
+numbers what number do we multiply by to
+get a number back one does that make
+sense one is the multiplicative identity
+so that means any number we multiply by
+one we will get one back except
+for zero and that means at zero we don't
+have a way of coming up with an inverse
+for it does that make sense so because
+zero does not have a multiplicative
+inverse this whole thing cannot be
+a
+group is anybody is anybody find this a
+little bit
+hard it's okay it is hard right let's
+let's make sure that we're setting a
+good footing for the
+class if at the end of the semester this
+is what I expect the overwhelmingly vast
+majority of you will be successful in
+the course is what I expect does that
+make sense I'll try my best as long as
+you stay connected to me and come to
+class and you're monitoring things that
+I feel like I've got a good track record
+over more than a decade now of teaching
+similar courses to this to where I won't
+let you fall off the bandwagon or
+whatever you want to call it as long as
+you're staying in tune with me right
+what I would expect though is if you
+expect to just sit and kind of watch
+this course that that's not going to
+work out does that make sense this is
+going to be a deep course we're going to
+go into mathematical proofs that's half
+of what it ises that makes sense kind of
+the discrete structures it's about
+proving
+things here we're having this notion
+where we're having to step out out of
+our comfort level a bit and go into
+things that are not necessarily familiar
+to us right and that's what being an
+engineer is every day that you going to
+work will be something that you're doing
+that's not comfortable because
+everything that's been comfortable has
+already been automated does that make
+sense anything that could be done
+without much effort has already been
+automated by AWS Azure apple and
+everybody else right okay so let's make
+sure that we got the got the
+expectations now I'm not criticizing
+anybody if you're if you're struggling
+with this because this is hard
+would anybody mind if I take the time to
+just restate everything that we got so
+far would anybody mind let's make sure
+that we get it so we're on path right
+now to discuss what a group is a group
+has properties before we before we talk
+about a group we have to make sure that
+we have one set okay you find this set
+that you want to Define an operation on
+it could either be a classic operation
+like addition multiplication subtraction
+division or you can construct one which
+is what we're going to do here in a
+minute if you'll bear with me all right
+
+now the
+group is a set it has an operation
+defined on it in order to be a group it
+has to have closure everybody make sure
+that you follow what does closure mean
+you take two elements from the set apply
+that operation you will certainly get
+another element from that set does that
+make sense it only takes one violation
+of that to make closure fail and if it
+fa if closure fails we don't have a
+group does that make sense if any these
+properties fails we don't have it after
+you've established that you're dealing
+with a set you define an operation and
+you have
+closure go to the next step let's
+actually make this The Next Step here
+the additive the identity under that
+operation is there an identity such that
+if you take an element apply that
+operation to this identity you will get
+this original ele El back does that make
+sense in the case of the real numbers
+under addition zero is the additive
+identity any number we add to zero we
+will get that original number back does
+everybody agree with that so do we have
+an additive
+identity under the real zero that fits
+so our next step is does every single
+element of the group have an inverse
+which means if you take that element add
+its inverse to it or whatever the
+operation is you will get the
+identity
+
+yeah always in fact once you define an
+operation don't consider any other
+arithmetic that you've known previously
+in life the whole universe of what
+you're analyzing has one operation and
+that's it forget all other arithmetic
+that you know about unless it's required
+to do the operation but forget it all
+otherwise
+so under addition with the real numbers
+does every number have an additive uh
+inverse take the number three what
+number do I add to three to get
+zero -3 three and3 are additive inverses
+
+and it doesn't matter which one's which
+this one's the additive inverse of that
+one that one's the additive inverse of
+this one does that make sense they
+always come in
+pairs does four have an additive
+inverse -4 okay does zero have have an
+additive inverse what is it itself does
+that make sense itself so that that's
+typically the case right itself now now
+we got all that worked out we're going
+to go on to the to the next operation so
+first of all does everybody agree that
+under addition the real numbers have an
+operation we have a set there set is
+closed on that operation there is an
+additive identity there every single
+element has an inverse does that make
+sense so is that a group
+that is a group now let's move on to
+multiplication the real numbers under
+multiplication now when we talk about
+real numbers under their
+multiplication we
+have do we have a set the set is the
+real numbers do we have a well- defined
+operation multiplication just like we
+traditionally know it do we have an
+identity the one element that if we
+multiply anything by it we will get that
+number back what is the what is the
+identity 5 * what = 5 1 3 * what equals
+
+3 1 7 * what equal 7 one does everybody
+
+see that one is certainly the identity
+now so we do have a set we do have a
+well- defined operation we do have
+closure we do have an identity does
+every element have an inverse such that
+if you take this element and do the
+operation with another element you will
+definitely get the multiplicative
+identity the answer is no what value
+fails does zero have an inverse under
+multiplication no because what number do
+we multiply Zero by to get the identity
+which is one can I multiply anything by
+zero and get one it's always zero so
+this
+fails it
+fails
+because zero does not
+have an
+inverse we
+cannot
+multiply
+anything by
+zero and
+get the
+identity
+which is one okay so what do we know the
+real numbers are not a group under which
+operation
+multiplication just by just by
+
+argument are the real numbers a group
+under
+division do we have a set yes do we have
+an operation that's well- defined yes do
+we have closure even
+in this case we don't even have closure
+why I can't take a number and divide by
+zero and get another number in the set
+because that's undefined so where where
+does this fail with the real numbers
+under division it fails just at the
+closure level right everybody see that
+we don't have a group because it doesn't
+even have closure at that point so do we
+need to consider anything else if we're
+just trying to label a group it only
+takes one of these things to fail let me
+go ahead and give you the the easiest
+thing for one make sure that you have a
+set to begin with that's not empty okay
+secondly make sure that you have an
+operation that you understand and is
+well defined like it can't change from
+every other element does that make sense
+the next thing I would check closure
+closure is where things fail pretty easy
+what's some of the tricks for finding
+closure think of ways that involve zero
+zeros are often where problems happen
+does that make sense after you determine
+that you got closure see if there's an
+identity inside of it does that make
+sense an identity after you have an
+identity then check to make sure every
+single element has an inverse why is
+that the hardest step because you may
+have an infinite set that may be what
+infinite in size and there may only be
+one element that's causing the problem
+which element is typically to be the
+Troublemaker something trivial zero is a
+good place to start does zero work out
+can we make zero work you see how you
+have to think out of the box what I'm
+trying to make you guys kind of come
+around to is how many guys have worked
+as an internship
+already when you guys are writing code
+in Java or you're writing code in C++ or
+whatever especially in the
+objectoriented languages you may have
+had programming assignments where you
+just had to sequentially do things like
+make it do this iterate through this
+Loop when you get into your job you'll
+start making abstract classes that can
+handle almost any kind of element do
+some sort of function return an
+arbitrary one does that make sense so
+like if you're a maybe a web designer
+even web design even typescript allows
+for such things as this where you you
+could actually create things you could
+pass in a URL link you could pass in a
+feature toggle you could pass in this
+and it has to recognize what it has
+whether or not it can do anything on it
+handle all the error cases and return
+back something that Mak sense in the
+context of what you got does that make
+sense in that case we're talking about
+making code portable you have to start
+thinking outside the box of what you
+traditionally think of in sequential
+programming and usual arithmetic does
+that make sense all right
+it's a hot day for this kind of topic
+don't you guys think anybody else in
+here feel like wow this is deep for a
+hot classroom right so the next time I
+know you guys really hang on to my life
+hack advice here what are you guys going
+to do the next time you're waiting on a
+table at that really nice restaurant
+with your significant other you're going
+to pull out a napkin and do
+what come up with sets with an operation
+ask each other if it's a group right no
+extra charge for that
+advice all right so we've already
+determine
+that division doesn't work for a group
+under real numbers all let's see what
+about the natural numbers are the
+natural numbers a group under
+
+addition are the natural numbers a group
+under addition we've already got
+somebody cast and vot I'm going to come
+to you here just in a second so are we
+got another vult are the naturals a
+
+group
+under addition in the traditional way
+that we know
+it all right so I've got some call outs
+here let me walk you through and then as
+soon as you guys hit the point where you
+think this doesn't work I want you to
+give me a shout out okay first do we
+have a set that's not empty Are there
+natural numbers cardinality is not zero
+for sure right
+secondly do we have an operation defined
+that's understandable and we understand
+what's happening usual addition we got
+that correct close
+is the naturals closed under addition I
+think we tackled this last time if you
+take any two natural numbers add them
+together do you get another one
+back okay what about an identity do the
+natural numbers have an identity we've
+got the call out what number do I what
+natural number do I add by to always get
+the result back or to get the original
+back what number would I have to add to
+one to get one
+back zero but zero is not a natural
+number so what do we say here it is a
+set check it is an
+operation there is an operation rather
+check we do we have
+closure check now what about an
+
+identity
+no it fails that does everybody see why
+what number do you add to a natural
+number to get that number back it would
+have to be zero but zero is not a
+zero is not a natural number now if you
+
+guys start googling things I talk about
+in class I want everybody to realize
+that and I have to say the engineers are
+kind of bad about this mathematicians we
+are very we are very stuck on calling a
+natural number starting at one
+occasionally you'll see some Engineers
+that will say well we kind of need zero
+so let's define the natural numbers to
+be all these numbers and let's add zero
+to it to make sure it's there in that
+case what you should do is do the
+naturals Union the set containing the
+zero or just simply call it the whole
+numbers right anyway so the natural
+numbers are a group under
+addition no it fails the identity
+
+test okay well Colin and some and some
+other what's your name I know
+Colin dantree dantree Colin
+has shined on this example right
+so I'm going to pitch back to these
+folks here I'm going to say you know
+what I can fix these problems that you
+claim that I got and I'm going to ask
+this question guess what question I'm
+going to ask
+now all right you guys think about it
+then all right
+are the whole numbers a
+
+group
+under addition
+are the
+whole maybe I didn't write this very
+well are the whole
+numbers a group under addition are the
+whole numbers a group under
+addition okay
+well look the wheels are turning I can
+see it correctly these two folks said
+there's no inverse there's no sorry
+there's no identity that I fix that with
+this
+set all right well let's see do we have
+uh a set that's
+nonempty yes do we have
+closure yes do we
+have what was the next
+one an
+operation check do we have what's the
+next one identity did we solve that one
+
+why
+because under addition zero is the
+addtive identity we fixed that with this
+said didn't we ah now next one do we
+have
+inverses what I'm doing the best I can
+to make you folks happy and you guys are
+saying no one more time why is
+that what number do I add to one to get
+the identity which is
+
+zero negative one but is negative one an
+element inside this group inside this
+set no so it
+fails
+inverses there is everybody starting to
+catch on this a little bit more now it
+fails inverses why 1 + -1 is 0 but -1 is
+
+not in the set of whole numbers every
+okay with
+that all right maybe I'll verbally say
+it out loud are the natural numbers
+closed under multiplication in this case
+do we have a
+set do we have an operation do we have
+closure yes all three of those yes yes
+so far do we have an identity one is the
+identity so good we're looking good so
+far and then we stall out because why we
+don't have inverses with the natural
+numbers under multiplication because
+what number do I multiply two by to get
+one one over two but that is not a
+natural number correct so it fails that
+does everybody see how we do this what
+about the holes are the holes a group
+under multiplication actually the same
+argument holes doesn't we got we got
+problems there too all right well we
+might as well head on here and see
+what's else is happening what about the
+the set of
+integers a
+group
+under
+addition who here wants to tackle this
+for me is a set of integers a group
+under
+addition well we got some confident
+folks let's make sure that they walk
+through the steps I'm sure they did but
+let's do it together as a class first
+and foremost look at everybody smiling
+everybody's excited make sure you're
+smiling yeah there you
+go
+good good
+okay good they're smiling right all
+right this the integers a group under
+addition do we have a set that's not
+empty do we have an operation that's
+well defined do we
+have closure if I add two integers do I
+get another
+integer yep if I do I have an identity
+what number do I add and I get the
+number back if attitude so what do I add
+to two to get two zero is zero an
+
+integer yes good we're on a roll with
+this one let's see what about so we got
+everything up to an identity inverses
+under addition what's the inverse of a
+number to what number do I add to two to
+get
+zero is it in the set yeah it is both
+two and negative -2 are in the set what
+about
+three3 what about 100 what do I add to
+100 to get
+zero that's in there now what I always
+say I always check zero because that's
+sometimes where the problem happens what
+about zero what do I add to zero to get
+zero not too hard be nice if we had a
+final exam doing that right is there any
+reason that anybody can think of why
+this is not a group under addition think
+of all those Edge cases as an
+engineer by the way for those of you
+guys that have written code I want you
+guys to realize something it's rarely
+ever the core of the problems that
+anybody will ever have trouble writing
+code for does that make sense rarely
+ever is there a problem writing code the
+true task of an engineer is to identify
+the edge cases where things go to hell
+right or there could be a division by
+zero problem or there could be an
+operation being happening on something
+that doesn't exist a network failure or
+a partial Network failure a delayed
+response or something async that causes
+a deadlock with something or a
+synchronous function that causes a
+deadlock because they simultaneously
+wait and it locks a machine up right
+think of the edge cases in this case I
+think zero we've covered it so in this
+case I feel comfortable saying that yes
+this is a group under addition raise
+your hand if you feel okay with that all
+right
+so now that everybody's comfortable and
+everybody's got over this original panic
+and everybody's like wow this guy I
+don't know what his point of all this is
+let me go ahead and let's go down the
+rabbit hole a little bit
+deeper
+consider the set s which is
+
+true and
+false consider a set that just has the
+Boolean values true and false anybody
+familiar with those can we go ahead and
+just abbreviate these as true sorry can
+we go ahead and abbreviate these as true
+and false is that okay why not right how
+about would anybody mind if I go with
+kind of a traditional programming
+language approach and let's just call
+this anybody got an
+idea zero and one is that okay as though
+we're looking at a copper wire where the
+voltage going high and to ground back
+and forth right so we have true and
+false does everybody agree that I'm
+going to consider this a set of either
+one or zero one being true zero being
+false every all clear on that and let's
+define the
+function
+define
+addition to be the exclusive
+
+or
+operation I want everybody to be quite
+clear here does everybody agree that I
+have now redefined Plus
+as something
+else how many you guys have had C++
+programming just because we typically
+Define I mean just because we typically
+Define addition to be one way can you
+actually create a class that has
+matrices can you add
+matrices can you add two sets I mean you
+could do that maybe you could just
+combine together maybe think of it as a
+union perhaps you can Define addition of
+anything you want as long as it's clear
+what you're doing right and C+ plus has
+anybody ever heard of operator
+overloading raise your hand if you've
+heard of that we can redefine addition
+to be some other things where we could
+take a matrix that's a class and a class
+and another Matrix and add them together
+and have a new class that's that we
+could overload the addition function
+right or the addition
+operation now consider the set true or
+false what the only two elements inside
+my
+set true and false what is my
+
+operation
+the exclusive or how many of you folks
+are familiar with
+that would it hurt if I go over it real
+fast to make sure everybody's on board
+how many of you remember back when you
+were younger and you had the
+multiplication tables where you had like
+1 through 12 here and then you had 1
+through 12 up here and then you kind of
+looked inside there to see what 6 * 7
+was you look at the intersection and
+there you got it does anybody remember
+that little table right you do not
+remember that or you do you do okay you
+do okay great so we got this table I'm
+going to make an operation table out of
+this so let's look at the operation
+table where I have 0 1 0 1 and I'm going
+to say this is my new addition operation
+by the way I defined
+it
+now 0 plus 0 in the way I've defined it
+is
+what exclusive or it follows very
+closely the or operation so if it's
+false and false what do I get
+here
+false if one of them if it's false and
+true what do I
+get
+true if I have true and false what do I
+get now typically under the or statement
+if either one of them is true that's
+enough to make it true the exclusive or
+takes it one step
+further except what is exclusive means
+what does it mean to be mutually
+exclusive you can only have one or the
+other right exclusive or is kind of like
+a M exclusive or where like it follows
+the ore operation until both of them are
+true and then it reverts back to
+what false that is the exclusive or for
+those of you guys that are in
+programming languages typically that's
+denoted by the carrot symbol how many
+you guys have ever used it
+before this is actually the way things
+are added inside of a processor the
+exclusive or operation right this is how
+when is anybody ever had a circuit class
+where you build an Adder an Adder
+circuit wasn't that essentially
+following an exclusive of or except it
+would carry the digit over right okay so
+if I'm not making sense by saying all
+that it's okay we won't need it but what
+is my operation for one what if I take 0
++ 0 what do I get zero what if I take 0
++ 1 what do I get one what if I take 1
+plus
+0o one what if I do 1 plus one zero so
+you see how we're kind of just on the
+edge of being a little bit abstract here
+right does everybody see that little
+abstraction we got doesn't follow
+doesn't make sense in the way that we
+were taught arithmetic growing up but
+it's the way that we have it is this a
+group number one do we Sorry do we have
+a
+set do we have a set is it non-empty do
+I have two elements in there true and
+false good do I have an operation that
+makes sense actually this is a complete
+operation because I gave you the table
+does everybody see that every
+combination is labeled in that table
+there we have two elements and we show
+pairwise how they work and so this is is
+a complete table so we have yes an
+operation that's completely defined on
+all
+elements what about
+closure if you make an operation table
+and you look inside the table does
+anybody see in the body of the table any
+values that are not inside the set do
+you guys agree that that's what that
+mean does anybody look in the table do
+you see anything in there that's not in
+their set so what does that
+automatically mean we have closure good
+now what about an inverse sorry I keep
+getting these out of order what about an
+identity now this is where we're a
+little bit abstract is there a number or
+is there a value in there where it
+appears that anytime it's paired up with
+something else it appears to return back
+that original value can I give you guys
+a hint if you ever make an operation
+table look down a column if it looks
+like a column is identical to the labels
+you've identified an identity does
+everybody see my label right here on the
+left hand side 01 does everybody
+everybody see I'm going to make a little
+dots everybody see how that's my label
+column does everybody see that this one
+mirrors
+it that implies an identity right does
+everybody see that it's true along the
+top as well here's my labels table and
+right here is my identity rule in both
+cases what appears to be the identity
+here false right is that true false
+false appear be the
+identity let it sink in make sure I'm
+saying it right it's false an identity
+here if I take that table okay what if I
+take false and add true to it under this
+operation table what do I get true what
+if I take true and I add false to it
+what do I get true so zero is the f is
+the additive identity here right yes it
+is is
+
+zero okay we have an identity now let me
+say one more thing
+inverses it's hard to see here isn't it
+does that make
+sense does everything have an inverse M
+meaning is there something I could add
+to it to go back to the addtive
+identity what do what do I add to zero
+to get zero based on this table what do
+I add to zero to get
+zero zero so that works out there's only
+one other element in the set right does
+everybody agree with that what do I add
+to one to get zero one does everybody
+see how they're what we call this if I'm
+not mistaken are things that were called
+involutions where they're own inverses
+does that make sense every okay with
+that so we do have inverses what did we
+conclude
+here
+that this is
+a it is a group and then we all scream
+out yes we've identified a set that's
+abstract and it is I love the excitement
+you need to be up here in the a roll
+right I like lots of excitement Haley
+what do you think about this excited
+great great he oh okay you're asking
+question
+okay yes every element has to have an
+inverse in fact you'll find out that
+it's Unique to every element does -3
+work as an inverse for any other value
+out than three under addition of real
+numbers so you'll find out that not only
+are inverses exist but they're unique to
+the element they're pawise unique to
+each other does that make sense so every
+element has to have an inverse and in
+this case do you see that it's so
+trivial that it's almost hard what do I
+add zero what do I add to zero to get
+zero under the table zero
+what do I add to one to get zero one
+does everybody see that
+great well it turns out that how many
+you guys have ever heard of the modu
+modular
+arithmetic this is essentially the table
+that you would get if you take numbers
+zero and one add them together and then
+take the remainder the modulus remainder
+of two what is 0 + 0 0 what is 0 + 1 1
+what is 1 + 0 1 what is 1 + 1 that is
+two but the remainder of two when you
+divide by two is zero this is exclusive
+or is actually modular arithmetic mod
+two how many guys see that
+now what is one divided two what is one
+what is the quotient of 1 divid two 0
+with a remainder of one
+right what is 1 + 1 that's two what is
+the quotient of two / two that's one but
+the remainder is zero so effectively
+that table is the set of remainders
+whenever you do the addition arithmetic
+with modular
+2 that make sense okay very
+important so it is a group
+yes what about how about we do this one
+what about s being the set of values
+false and true
+under the
+and
+operation under the and operation who
+knows what the classical symbol is in
+who knows what the classic symbol is for
+and double and S was exclusive or was
+that kind of carrot looking thing on the
+number six there right typically all
+right so let's go ahead and do a truth
+table we call it right so I'm going to
+make this
+table uh I'm going to say that our
+addition
+is the and
+operation we got our table the and
+operation means that it has it can only
+be true if both inputs are true does
+everybody remember that from the
+programming language if we have an if
+condition on our statement if we use a
+double Ampersand it must be the case
+that these two things are both high in
+order for it to be high on the output
+
+right we did exclusive or before yeah
+exclusive or where we we essentially
+have exclusivity where it's follows the
+or operation until both are set then it
+goes this one good way is if you have if
+you're ever using exclusive or exclusive
+or is a way to where you can flip if you
+have an input that you need to negate
+sometimes but you can only pass in one
+more input you could Define it to be
+exclusive ore whenever you pass this one
+in turn on the negate feature make the
+exclusive or and it'll flip this origin
+B in it's a trick that's common whenever
+you have kind of restricted inputs of
+sorts if that makes sense if I put in
+zero and zero in an and operation I get
+back zero good are you like a Bulan
+expert oh well awesome even better I
+like that what about zero and one we'll
+just let we'll just keep on with you
+zero okay what about one and zero oh
+good what about one and
+one okay so is this a group I tell you
+what can I get you guys all of you are
+sitting at a table could I get all of
+you to sit there and discuss whether
+this is a group or
+not okay let's go through our things for
+one who votes that we do have a set
+that's non
+empty do we have a set that's non empty
+we do by the way why do we have to have
+a set that's nonempty does anybody
+remember what I said about the empty set
+no matter what everything
+is true about the empty set it doesn't
+matter what goes on if you have an empty
+set you could prove that there's a green
+eyed line in there if you if you follow
+a certain procedure right everything is
+true about a set that contains nothing
+so why do I have to say it has to be a
+non-empty set is an empty set true is an
+empty set a
+group make Cas isly true because you
+can't show there's anything in there
+that fails it right all right so is it a
+non-empty set yes does it contain a
+well-defined operation we've completely
+defined it by giving EXP the table of
+all the interactions right so yes we do
+have an operation that's well defined on
+all elements what about do we have do we
+have uh
+closure that all you have to do is
+visually inspect the table do you see
+anything in there that's outside the
+set01 so we do have
+closure right anytime I say we have
+closure I feel like we're recovering
+from something sad or something but what
+about next the next one was an identity
+okay now this one serves a discussion
+but I don't know what our result will be
+let's let's go through it what do I add
+what is the identity is there anything
+in here that whenever I pair it with
+this I will always get the other value
+back what is our
+conversation look through the columns
+and if you see a column that matches the
+label column perfectly on both the
+horizontal row and the column you do
+have a
+what the number one is the ident here
+right does everybody see that what is 1
++
+0 0 what is 1 + one one what is 0 + 1 0o
+
+what is 1+
+0 zero do you see how one is acting like
+an identity go down through there does
+everybody see a column that mirrors the
+label
+column does everybody agree that this is
+our label column and that this mirrors
+it perfectly and and if we look at the
+horizontal row it's perfectly as well so
+do we have an identity yes it is the
+number one is the
+identity now what about inverses
+whoops do not assume that that was the
+right answer because I did that what
+about
+inverses huh let's look at the table we
+got to vote for no here let's see if
+this is right who else votes no we don't
+have an
+inverse what do I add under the and
+operation what do I add to zero What's
+the
+identity one what do I add to zero to
+get
+one notice that if zero is present it's
+zero no matter what both row and column
+raise your hand if you see
+that what do we say there is no
+
+inverse for zero under the and operation
+if you have a zero it makes it zero
+there is no operation that will get you
+to the number one there right how you
+guys understand this example so is this
+a
+group it is not a
+group it is not a
+group okay now let me give you guys this
+let me give you guys a thought
+yeah
+yeah yes you have when you're talking
+about identity if you have an identity
+it means that you have a column that
+would mirror the label column right if
+you think about what that's implying
+it's not it's not nothing deep it's
+actually just kind of straightforward
+like what do you get to that this well
+if it's in that column that's the
+identity right so if you have so here's
+another extent if you have a column that
+look look at the columns if you have a
+column that perfectly matches the the
+row column which is this one it means
+that must be the
+identity take a look up here do we have
+have one that perfectly matched the
+label column it's this one so which one
+is the
+identity this one does that make sense
+all right now we're at the point where I
+feel like this is as far as I want to go
+into groups let's go into what we call
+the abstract notion does everybody agree
+that when we have a set of numbers that
+we grew up knowing how to add them and
+multiply them does everybody agree that
+the real numbers are closed under
+addition but they are not
+closed
+under well let's say we we have sets
+let's back up does everybody agree that
+under addition the natural numbers are
+
+closed right does everybody agree that
+the integers are a group under addition
+but they are not a group under
+multiplication does that make sense so
+here let's introduce the idea of a
+ring a ring is defined where we have to
+have
+both addition
+and
+multiplication here's the
+rules
+R is a
+set
+R is a
+group
+under
+addition
+R
+needs an
+identity under
+
+multiplication n
+r let's make sure we get this
+
+NR plus I'm sorry
+multiplication
+distributes
+over
+addition by the way let's suppose this
+does everybody remember this that if I I
+have a * b + C does everybody remember
+what parentheses means parentheses means
+do that first if you have a
+ring and now remember plus and
+multiplication are defined abstractly
+here but we can represent it just in
+typical States if I take a set and I
+first add B and C together and then I
+take that value and multiply it with a
+does everybody see what I'm saying there
+I first add B and C together under the
+ring
+operation then I take that value I
+multiply it by a with multiplication
+under the ring that would be the same
+thing as if I took a multiplied it with
+B
+plus a and multiplying it with C does
+everybody remember how this distributes
+just in our regular arithmetic as we
+grew up knowing it does everybody agree
+with
+
+this
+oh this is
+multiplication the the dot sorry that's
+a good point multiplication distributes
+over addition okay now what I want us to
+consider that I want you guys to go home
+and consider is
+consider
+s where 0er and
+one are elements of the set I want you
+guys to be clear about something there's
+one more thing there's actually one more
+condition here an R that's not true for
+all sets it needs to be something we
+call a billion but I won't hold you to
+that one a billion means that the
+elements commute matrices can form a
+group and notice that matrices don't
+commute the order of operation the if
+you add if you multiply two matrices
+it's different depending on which way
+you multiply them a * B is different
+than b * a we'll leave you to that one
+let's define s to be the set of values
+true or false addition ition is the
+exclusive or function that I defined
+earlier multiplication is the and
+operation I defined
+earlier let's see if you guys can make
+sure that you understand that this is a
+ring this is a
+ring
+
+specifically this is
+gf2 it's the gawa FI of two elements and
+this is how
+computers
+typically do
+
+arithmetic in multiplication in binary
+how does how how does it work it follows
+the and operation how does a addition
+work in binary it follows the exclusive
+or operation does that make sense raise
+your hand if you follow what I've tried
+to arrive at here is kind of the finale
+how do computers G
+gf2 how do computers add they follow
+
+the
+no so we breaking up the ring exor how
+do computers add how do typically binary
+devices add they follow the exclusive or
+operation how do computers typically
+multiply they follow the and operation
+together just like we have like real
+numbers where we can add and multiply
+them to do all the arithmetic that we
+need don't computers need to have that
+same completeness to where it has a
+bitstream that it may need to add and
+multiply in order for everything in the
+world to work out the conversion of
+bases the ability to to work no matter
+what we're doing under you have to have
+a ring to find the integers alone aren't
+complete enough the real numbers are
+complete enough does that make sense
+everybody needs to realize that under a
+ring inverses are not necessary under
+the multiplication does that make sense
+what's the only group it's a group under
+addition the only conditions we have on
+the multiplication is that it
+distributes over the
+addition and we have an identity
+right is that okay in more abstract
+mathematics they'll dismiss one or two
+of those things but that's for the most
+part it on the next class if you guys
+don't mind on the next lecture I'm going
+to prove to you guys all the step have
+to show that gf2 is a ring and then
+we're done with this entire topic final
+okay does anybody feel like this is just
+too
+terrible so what next next lecture we're
+going to do what we're going to
+basically show that gf2 fits this
+definition and then we're done with it
+okay all right no
+problem
+all right so today's lecture we're going
+to cover abstract mathematics the last
+lecture covered what operations on a set
+specifically we had one thing that we
+were covering and it was
+called closure who in here could
+summarize closure for
+
+me that is that that is stated as best
+anybody could State good job when you
+take two elements of the set you
+performal operation and so far all we
+did was just addition subtraction
+multiplication division right you take
+two objects in the set apply that
+operation to them you should get back
+another element of the set correct now
+does that mean that you pick two and it
+goes in there or does it have to mean
+that for any two that you do it has to
+map back to Something in the set does
+everybody see that to show that
+something is not closed all you had to
+do is show a counter one counter example
+where it failed right we said that the
+real numbers is not closed under
+division because of one element what is
+that zero can you define can you divide
+anything by
+Zero no what does that mean that means
+undefined error that means you can't
+consider that right don't say that
+that's Infinity because that's when
+you're talking about limit where that's
+happening something over zero including
+0 divid 0 is undefined so out of that
+entire very dense infinite set one
+element causes it to fail does that make
+sense so to show something is not closed
+you only have to show one counter
+example do you have to give two do you
+have to give three do you have to give
+an explanation you just show one counter
+example where it fails to show that it
+is closed is sometimes a bit hard
+because you have to make an abstract
+statement to where you're not using
+specific values but you're using a
+construction that represent any
+arbitrary two values you do that
+construction and you show that it's in
+the set does that make sense so how many
+of you people remember that last time we
+said why is it that the rationals are
+closed under addition and we kind of
+made the argument that it works for
+subtraction too why is it closed under
+addition remember what we said we picked
+two elements represented them as
+fractions we described that this is a
+fraction two integers we found a common
+denominator kind of abstractly added
+them together made an argument that it's
+still a fraction of two integers where
+the denominator is not zero and so it
+must have been another rational number
+can anybody just by quickly me saying it
+does everybody remember that what I
+would expect is something like that to
+may have to be done on a test everybody
+gets a little upset about that because a
+lot of you have already sent me a slack
+notification saying I don't know if I
+could have come off of that on the fly
+on my own
+fortunately I think as an engineer I'm
+more interested about what you can do
+when you have solid time to think about
+it rather than what you can do on the
+Fly uh personally I like driving across
+bridges that have been well thought out
+instead of somebody done the back of
+envelope type calculations on it right
+so what I would expect is if I have
+things like that on the exam either the
+entire exam will be take home or
+there'll be parts of it to where you get
+to take that home does that make sense
+and work on together so let me tell you
+a classic one I showed you how to do the
+how to show that the even numbers are
+closed under
+addition are the odd numbers closed
+under
+addition 3 + 3 is six it's okay if you
+noed yes that's okay six what about
+multiplication if you multiply any two
+odd numbers do you get another odd
+number before you answer do do two of
+them together before you 5 * 5 is 25 3 *
+3 is nine 1 * 1 is okay so before we
+answer we all an agreement that probably
+the odd numbers are closed under
+multiplication right because you
+multiply two odds you get another odd
+the problem is let's say the positive
+odd numbers let's ring that the problem
+is is that unless you want to go through
+and write out every possible pair of
+that entire infinite set which let's be
+clear you can't do that right you're
+going to have to make some sort of
+argument so if you really want to know
+how to prepare for the test I would walk
+into the test knowing how to do
+something like showing the odd numbers
+are closed under
+multiplication how are what is an odd
+number we said all even numbers have the
+form 2K + 1 where K is a whole
+number sorry I just gave away I just
+gave it away I gave it away didn't I
+what are the even numbers 2K where K is
+a whole number correct the odd numbers
+are 2K + one where K is a whole number
+right so if you were to take that
+argument where you take two odd numbers
+represent them as a form where they are
+2K + 1 and some other number 2K + 1 show
+them that you add together that you
+still have something two * something
+plus something else you'll be set does
+that make sense and you'll be able to
+demonstrate that so that'd be what
+something I'd expect you to be able to
+do all right so everybody's tired of me
+talking everybody's excited about this
+new Venture into abstract mathematics
+I'm excited for you guys to be excited
+about it so let's go a and get started
+so we already mentioned that we have
+things that have closure right well it
+turns out that there's a few more
+properties that we could actually add to
+these sets to where if they meet all
+these extra new properties they form a
+very powerful Concept in mathematics in
+that we're going to extend this into the
+notion of what we know as addition
+multiplication so that's what we're
+heading we're going to abstractly Define
+what it means to mathematically say you
+can add and multiply at the same time on
+a set okay but we're going to have to
+take some some minor steps on this
+
+first let's discuss what a group
+is I need to go down on
+so let's define a group a
+group G so let G be a group oh
+
+transition the screen
+over so we could say let G be a group
+okay what does it mean to be G well
+first we have
+to
+Define an operation
+just like we did last time can we even
+can we even make up an
+operation if we Define an operation that
+makes sense we could even make one up
+and it's going to appear like we may do
+that at times but we first have to
+Define an operation we often refer to
+this let G be a group where sometimes
+you'll see
+this where that means let G be a group
+under addition or consider regular
+addition does that make sense we can do
+that we have to find find an operation
+
+typically it's
+denoted AS
+Plus even if it's not the way that we
+traditionally think of plus okay let me
+ask you a question whenever you look at
+the computer whenever you look at how
+the processor adds two things in your
+computer you type in the calculator 3 +
+4 is there some way to get a number
+three to pass through a wire and then
+the number four to pass through a wire
+then all of a sudden you got this camera
+inside your processor where this brain
+sees that it's a three plus a four and
+then it says oh that's seven and then it
+pushes a seven through copper wires is
+that how that
+happens that is how that happens go back
+to the hardware class CU I don't think
+you're quite there yet right so what
+happens is is we represent those values
+as a binary stream right that goes into
+the processor what turns out that that's
+going to stay a binary stream all the
+way through that arithmetic is that a
+correct and then when it goes back to
+the screen that's when we as humans see
+the word the letter seven correct we
+push a three it sends some bit binary
+stream to the processor we say plus4 it
+sends that through the through the
+copper wires is a series of pulses on
+and off and then it goes into the
+processor it stays a stream of bits
+right and it does something well it
+turns out that when we add two bits does
+anybody know what that looks like when
+we add two bits it looks like the
+exclusive or operation where if you have
+0 + one it's one 1 plus 0 is one 0 plus
+0 is 0o 1+ one that's the problem what
+does that become zero but it carries it
+over right okay so that's the idea we
+can Define addition almost any way that
+we want to but we have to make sure it's
+consistent and understood by everybody
+when we see that symbol all right the
+set has to have
+closure what do closure mean that under
+the operation if you add two things the
+result will be another element of of the
+set correct there has to be a
+notion of something called an
+additive
+inverse there's an inverse element one
+element one element is the inverse let
+me ask you guys a question what does it
+mean to be an
+inverse H what if I
+said the additive
+inverse we also have to have something
+called an
+additive
+identity these two things kind of go
+hand in hand maybe I should have said
+identity first but let's go with this
+identity if I say an identity is
+something where if I take an operation
+and I add the identity back I get the
+other value automatically so if I take
+three and add zero what do I
+get no tricks if I take three and add
+zero what do I get three if I take four
+and add zero what do I get four if I
+take zero and add seven to it what do I
+get right wouldn't it be nice if we had
+a final exam doing that be like I know
+how to use the additive identity and if
+I take A+ zero I get a right now the
+idea is that this can be abstractly a
+little bit strange whenever we go into
+other sets does that make sense but it's
+essentially the one element inside the
+set so that way if you take a which is
+also an element of the set and you add
+this zero element that we refer to as
+the additive identity you get that a
+back no matter what value is added to it
+including itself you get that value back
+does that make sense 3 + 0 is 3 4 + 0 is
+4 0 + 5 is 5 does that make
+sense now the additive inverse every
+element has an additive inverse every
+element has an additive inverse so that
+way when you add the two together an
+element and it's additive inverse you
+get the additive identity you see how do
+you see how complic this sounds way I'm
+saying it out loud but let me say this
+what do I add to three to get
+zero3 so three is the additive identity
+of -3 -3 is the additive I'm sorry -3 is
+the additive inverse of three three is
+the additive inverse of neg3 does
+everybody see that raise your hand if
+you follow what I'm saying here right so
+this side of the room is following
+nobody on the left side is okay what is
+the additive inverse of six
+-6 that's good what is the addtive
+inverse
+of8 8 right wouldn't it be nice if we
+had a final exam doing that right okay
+now in each case how do you know what
+the additive inverse is of an element
+it's whatever you add to it to get zero
+does that make sense all
+
+right so we've defined an operation we
+have closure we have an additive inverse
+and we have an additive identity correct
+all right let's see what that buys us
+here let's
+
+consider the
+real numbers okay let's suppose that we
+have
+a that's a real
+number what is the inverse of
+a let's say consider the real numbers
+under I forgot to say this under the
+operation
+of addition every okay with that so
+which operation are we considering
+addition so a is an element inside the
+set of real numbers right what is its
+inverse remember this is what we're
+doing what is its
+inverse that is negative 8 does
+everybody see that notation how many you
+guys are familiar with that raising to
+the negative 1 essentially means inverse
+we can apply inverses to functions you
+know some functions you can plug it in
+there's an inverse function that undoes
+it that's a big thing in cryptography of
+sorts right it's a big notion in in
+hashing where you you don't have an
+inverse sometimes or an easy one at
+least okay what is the
+
+zero in the real numbers we typically
+represent the additive identity as zero
+so what is that it's just zero right
+this is the additive
+
+identity can we all agree that in this
+case 3 inverse is simply -3 how many you
+guys see that that notation is fitting
+here because when I take 3 inverse plus
+three I get the same thing as if I took
+three and did three inverse that would
+be zero does everybody agree with
+that
+okay all
+right if I add two elements of the real
+numbers do I get another real number
+back okay so I guess we got our first
+example under our belt what about if we
+have what if we have the real numbers
+
+under
+multiplication
+what is the identity in this
+
+case what is the
+identity it's one one is the identity
+under multiplication 3 * 1 is 3 4 * 1 is
+4 1 * 6 is 6 does everybody see the
+difference there under multiplic under
+addition the identity was Zero under did
+I get it right under addition the
+identity is zero under multiplication it
+is one does everybody see why got a
+question
+
+no not under
+addition all that's good question so the
+question was if you don't mind me as
+repeating it the question was is I
+thought if I raised 3 to the1 that was
+an exponent to where I essentially wrote
+one over three correct except what's the
+operation I can't consider that because
+there is no division in my world I've
+only Define the Operation to be one
+thing which is addition so what is the
+inverse what is the identity under
+addition zero so 3 to the -1 means what
+is the additive inverse of three which
+would be -3 does that make sense you
+have to be aware of the inverse what I'm
+what I'm trying to get you guys to do is
+that you grew up your entire life
+including me learning arithmetic on the
+real numbers does that make sense we're
+now scooting over into a world where
+this may be defined differently and you
+as Engineers are going to realize that
+in the complex field when you get in
+electrical engineering or whatever that
+square roots you have to be careful the
+arithmetic or that imaginary unit
+doesn't make sense right you also have
+to be aware that sometimes these
+operations are actually Boolean
+functions correct and then we have to
+kind of step away from
+
+that
+all right so in this case what do we say
+consider the real numbers under the
+operation
+of addition in this case we're dealing
+with the real numbers
+under multiplication know what the
+operation is and then you'll know what
+that negative to the negative one means
+sometimes it's only defined in a table
+and you can't do arithmetic to get there
+does that make sense there are some
+groups where you just have to look at an
+operation table to actually see what's
+happening all right so the identity is
+one anytime you multiply something by
+one you get the value back
+right if a is an element of the real
+numbers what is a inverse now we might
+look over here to our guy in the green
+shirt maybe he'll help us out with that
+what is our operation
+now yeah 1 over a because this will be 1
+over
+a because a * 1/ a is is a / a which is
+
+our multiplicative
+identity everybody agree with that now
+the only exception
+is what about this set is this a
+
+group is the real numbers under
+multiplication a
+group let's take a look up
+here in here under under
+addition do we have closure are real
+numbers closed under
+addition okay so we got closure so let's
+say this we have
+closure do we have an additive
+identity under addition what is it zero
+we have an
+identity do we have an additive inverse
+does every element have an additive
+inverse does anything fail with that no
+so every
+
+element has an inverse so we have a
+group we have closure we have our
+operation defined we have an identity
+every element has an additive inverse so
+this is a group does that make sense so
+in this case we have a
+
+group down here do we have a
+multiplicative
+identity we do don't we do we
+have does every element have an
+
+inverse if if we Define the real numbers
+under multiplication we end up with a
+problem and that zero does not have a
+what in this case is zero
+identity under
+multiplication what's the identity under
+multiplication one zero is not the
+identity in this case and zero does not
+have an inverse is there any number we
+can multiply Zero by to get
+one
+so this is a
+problem
+0o does not have an
+
+inverse we
+cannot multiply a
+number by zero and
+
+get the
+number one so tell me what property we
+fail here we fail the property of every
+element having an inverse correct does
+that make sense so we have under
+addition it's a group we have closure
+under the operation we have what
+else an identity every element has an
+inverse such that you add the two
+together you'll get the additive
+identity
+correct the real numbers on the
+multiplication fail which
+thing one element does not have an
+inverse so that means that this whole
+thing is not a group so
+not a group
+
+okay inverses do because remember what's
+the operation you have to take two
+elements from the set what's the idea of
+an inverse you have to take two elements
+from the set multiply them together and
+get something else on set because you're
+still applying the
+
+operation because we can calculate that
+so what is what do I what is the add
+what is the multiplicative what is the
+multiplicative identity of the real
+numbers what number do we multiply by to
+get a number back one does that make
+sense one is the multiplicative identity
+so that means any number we multiply by
+one we will get one back except
+for zero and that means at zero we don't
+have a way of coming up with an inverse
+for it does that make sense so because
+zero does not have a multiplicative
+inverse this whole thing cannot be
+a
+group is anybody is anybody find this a
+little bit
+hard it's okay it is hard right let's
+let's make sure that we're setting a
+good footing for the
+class if at the end of the semester this
+is what I expect the overwhelmingly vast
+majority of you will be successful in
+the course is what I expect does that
+make sense I'll try my best as long as
+you stay connected to me and come to
+class and you're monitoring things that
+I feel like I've got a good track record
+over more than a decade now of teaching
+similar courses to this to where I won't
+let you fall off the bandwagon or
+whatever you want to call it as long as
+you're staying in tune with me right
+what I would expect though is if you
+expect to just sit and kind of watch
+this course that that's not going to
+work out does that make sense this is
+going to be a deep course we're going to
+go into mathematical proofs that's half
+of what it ises that makes sense kind of
+the discrete structures it's about
+proving
+things here we're having this notion
+where we're having to step out out of
+our comfort level a bit and go into
+things that are not necessarily familiar
+to us right and that's what being an
+engineer is every day that you going to
+work will be something that you're doing
+that's not comfortable because
+everything that's been comfortable has
+already been automated does that make
+sense anything that could be done
+without much effort has already been
+automated by AWS Azure apple and
+everybody else right okay so let's make
+sure that we got the got the
+expectations now I'm not criticizing
+anybody if you're if you're struggling
+with this because this is hard
+would anybody mind if I take the time to
+just restate everything that we got so
+far would anybody mind let's make sure
+that we get it so we're on path right
+now to discuss what a group is a group
+has properties before we before we talk
+about a group we have to make sure that
+we have one set okay you find this set
+that you want to Define an operation on
+it could either be a classic operation
+like addition multiplication subtraction
+division or you can construct one which
+is what we're going to do here in a
+minute if you'll bear with me all right
+
+now the
+group is a set it has an operation
+defined on it in order to be a group it
+has to have closure everybody make sure
+that you follow what does closure mean
+you take two elements from the set apply
+that operation you will certainly get
+another element from that set does that
+make sense it only takes one violation
+of that to make closure fail and if it
+fa if closure fails we don't have a
+group does that make sense if any these
+properties fails we don't have it after
+you've established that you're dealing
+with a set you define an operation and
+you have
+closure go to the next step let's
+actually make this The Next Step here
+the additive the identity under that
+operation is there an identity such that
+if you take an element apply that
+operation to this identity you will get
+this original ele El back does that make
+sense in the case of the real numbers
+under addition zero is the additive
+identity any number we add to zero we
+will get that original number back does
+everybody agree with that so do we have
+an additive
+identity under the real zero that fits
+so our next step is does every single
+element of the group have an inverse
+which means if you take that element add
+its inverse to it or whatever the
+operation is you will get the
+identity
+
+yeah always in fact once you define an
+operation don't consider any other
+arithmetic that you've known previously
+in life the whole universe of what
+you're analyzing has one operation and
+that's it forget all other arithmetic
+that you know about unless it's required
+to do the operation but forget it all
+otherwise
+so under addition with the real numbers
+does every number have an additive uh
+inverse take the number three what
+number do I add to three to get
+zero -3 three and3 are additive inverses
+
+and it doesn't matter which one's which
+this one's the additive inverse of that
+one that one's the additive inverse of
+this one does that make sense they
+always come in
+pairs does four have an additive
+inverse -4 okay does zero have have an
+additive inverse what is it itself does
+that make sense itself so that that's
+typically the case right itself now now
+we got all that worked out we're going
+to go on to the to the next operation so
+first of all does everybody agree that
+under addition the real numbers have an
+operation we have a set there set is
+closed on that operation there is an
+additive identity there every single
+element has an inverse does that make
+sense so is that a group
+that is a group now let's move on to
+multiplication the real numbers under
+multiplication now when we talk about
+real numbers under their
+multiplication we
+have do we have a set the set is the
+real numbers do we have a well- defined
+operation multiplication just like we
+traditionally know it do we have an
+identity the one element that if we
+multiply anything by it we will get that
+number back what is the what is the
+identity 5 * what = 5 1 3 * what equals
+
+3 1 7 * what equal 7 one does everybody
+
+see that one is certainly the identity
+now so we do have a set we do have a
+well- defined operation we do have
+closure we do have an identity does
+every element have an inverse such that
+if you take this element and do the
+operation with another element you will
+definitely get the multiplicative
+identity the answer is no what value
+fails does zero have an inverse under
+multiplication no because what number do
+we multiply Zero by to get the identity
+which is one can I multiply anything by
+zero and get one it's always zero so
+this
+fails it
+fails
+because zero does not
+have an
+inverse we
+cannot
+multiply
+anything by
+zero and
+get the
+identity
+which is one okay so what do we know the
+real numbers are not a group under which
+operation
+multiplication just by just by
+
+argument are the real numbers a group
+under
+division do we have a set yes do we have
+an operation that's well- defined yes do
+we have closure even
+in this case we don't even have closure
+why I can't take a number and divide by
+zero and get another number in the set
+because that's undefined so where where
+does this fail with the real numbers
+under division it fails just at the
+closure level right everybody see that
+we don't have a group because it doesn't
+even have closure at that point so do we
+need to consider anything else if we're
+just trying to label a group it only
+takes one of these things to fail let me
+go ahead and give you the the easiest
+thing for one make sure that you have a
+set to begin with that's not empty okay
+secondly make sure that you have an
+operation that you understand and is
+well defined like it can't change from
+every other element does that make sense
+the next thing I would check closure
+closure is where things fail pretty easy
+what's some of the tricks for finding
+closure think of ways that involve zero
+zeros are often where problems happen
+does that make sense after you determine
+that you got closure see if there's an
+identity inside of it does that make
+sense an identity after you have an
+identity then check to make sure every
+single element has an inverse why is
+that the hardest step because you may
+have an infinite set that may be what
+infinite in size and there may only be
+one element that's causing the problem
+which element is typically to be the
+Troublemaker something trivial zero is a
+good place to start does zero work out
+can we make zero work you see how you
+have to think out of the box what I'm
+trying to make you guys kind of come
+around to is how many guys have worked
+as an internship
+already when you guys are writing code
+in Java or you're writing code in C++ or
+whatever especially in the
+objectoriented languages you may have
+had programming assignments where you
+just had to sequentially do things like
+make it do this iterate through this
+Loop when you get into your job you'll
+start making abstract classes that can
+handle almost any kind of element do
+some sort of function return an
+arbitrary one does that make sense so
+like if you're a maybe a web designer
+even web design even typescript allows
+for such things as this where you you
+could actually create things you could
+pass in a URL link you could pass in a
+feature toggle you could pass in this
+and it has to recognize what it has
+whether or not it can do anything on it
+handle all the error cases and return
+back something that Mak sense in the
+context of what you got does that make
+sense in that case we're talking about
+making code portable you have to start
+thinking outside the box of what you
+traditionally think of in sequential
+programming and usual arithmetic does
+that make sense all right
+it's a hot day for this kind of topic
+don't you guys think anybody else in
+here feel like wow this is deep for a
+hot classroom right so the next time I
+know you guys really hang on to my life
+hack advice here what are you guys going
+to do the next time you're waiting on a
+table at that really nice restaurant
+with your significant other you're going
+to pull out a napkin and do
+what come up with sets with an operation
+ask each other if it's a group right no
+extra charge for that
+advice all right so we've already
+determine
+that division doesn't work for a group
+under real numbers all let's see what
+about the natural numbers are the
+natural numbers a group under
+
+addition are the natural numbers a group
+under addition we've already got
+somebody cast and vot I'm going to come
+to you here just in a second so are we
+got another vult are the naturals a
+
+group
+under addition in the traditional way
+that we know
+it all right so I've got some call outs
+here let me walk you through and then as
+soon as you guys hit the point where you
+think this doesn't work I want you to
+give me a shout out okay first do we
+have a set that's not empty Are there
+natural numbers cardinality is not zero
+for sure right
+secondly do we have an operation defined
+that's understandable and we understand
+what's happening usual addition we got
+that correct close
+is the naturals closed under addition I
+think we tackled this last time if you
+take any two natural numbers add them
+together do you get another one
+back okay what about an identity do the
+natural numbers have an identity we've
+got the call out what number do I what
+natural number do I add by to always get
+the result back or to get the original
+back what number would I have to add to
+one to get one
+back zero but zero is not a natural
+number so what do we say here it is a
+set check it is an
+operation there is an operation rather
+check we do we have
+closure check now what about an
+
+identity
+no it fails that does everybody see why
+what number do you add to a natural
+number to get that number back it would
+have to be zero but zero is not a
+zero is not a natural number now if you
+
+guys start googling things I talk about
+in class I want everybody to realize
+that and I have to say the engineers are
+kind of bad about this mathematicians we
+are very we are very stuck on calling a
+natural number starting at one
+occasionally you'll see some Engineers
+that will say well we kind of need zero
+so let's define the natural numbers to
+be all these numbers and let's add zero
+to it to make sure it's there in that
+case what you should do is do the
+naturals Union the set containing the
+zero or just simply call it the whole
+numbers right anyway so the natural
+numbers are a group under
+addition no it fails the identity
+
+test okay well Colin and some and some
+other what's your name I know
+Colin dantree dantree Colin
+has shined on this example right
+so I'm going to pitch back to these
+folks here I'm going to say you know
+what I can fix these problems that you
+claim that I got and I'm going to ask
+this question guess what question I'm
+going to ask
+now all right you guys think about it
+then all right
+are the whole numbers a
+
+group
+under addition
+are the
+whole maybe I didn't write this very
+well are the whole
+numbers a group under addition are the
+whole numbers a group under
+addition okay
+well look the wheels are turning I can
+see it correctly these two folks said
+there's no inverse there's no sorry
+there's no identity that I fix that with
+this
+set all right well let's see do we have
+uh a set that's
+nonempty yes do we have
+closure yes do we
+have what was the next
+one an
+operation check do we have what's the
+next one identity did we solve that one
+
+why
+because under addition zero is the
+addtive identity we fixed that with this
+said didn't we ah now next one do we
+have
+inverses what I'm doing the best I can
+to make you folks happy and you guys are
+saying no one more time why is
+that what number do I add to one to get
+the identity which is
+
+zero negative one but is negative one an
+element inside this group inside this
+set no so it
+fails
+inverses there is everybody starting to
+catch on this a little bit more now it
+fails inverses why 1 + -1 is 0 but -1 is
+
+not in the set of whole numbers every
+okay with
+that all right maybe I'll verbally say
+it out loud are the natural numbers
+closed under multiplication in this case
+do we have a
+set do we have an operation do we have
+closure yes all three of those yes yes
+so far do we have an identity one is the
+identity so good we're looking good so
+far and then we stall out because why we
+don't have inverses with the natural
+numbers under multiplication because
+what number do I multiply two by to get
+one one over two but that is not a
+natural number correct so it fails that
+does everybody see how we do this what
+about the holes are the holes a group
+under multiplication actually the same
+argument holes doesn't we got we got
+problems there too all right well we
+might as well head on here and see
+what's else is happening what about the
+the set of
+integers a
+group
+under
+addition who here wants to tackle this
+for me is a set of integers a group
+under
+addition well we got some confident
+folks let's make sure that they walk
+through the steps I'm sure they did but
+let's do it together as a class first
+and foremost look at everybody smiling
+everybody's excited make sure you're
+smiling yeah there you
+go
+good good
+okay good they're smiling right all
+right this the integers a group under
+addition do we have a set that's not
+empty do we have an operation that's
+well defined do we
+have closure if I add two integers do I
+get another
+integer yep if I do I have an identity
+what number do I add and I get the
+number back if attitude so what do I add
+to two to get two zero is zero an
+
+integer yes good we're on a roll with
+this one let's see what about so we got
+everything up to an identity inverses
+under addition what's the inverse of a
+number to what number do I add to two to
+get
+zero is it in the set yeah it is both
+two and negative -2 are in the set what
+about
+three3 what about 100 what do I add to
+100 to get
+zero that's in there now what I always
+say I always check zero because that's
+sometimes where the problem happens what
+about zero what do I add to zero to get
+zero not too hard be nice if we had a
+final exam doing that right is there any
+reason that anybody can think of why
+this is not a group under addition think
+of all those Edge cases as an
+engineer by the way for those of you
+guys that have written code I want you
+guys to realize something it's rarely
+ever the core of the problems that
+anybody will ever have trouble writing
+code for does that make sense rarely
+ever is there a problem writing code the
+true task of an engineer is to identify
+the edge cases where things go to hell
+right or there could be a division by
+zero problem or there could be an
+operation being happening on something
+that doesn't exist a network failure or
+a partial Network failure a delayed
+response or something async that causes
+a deadlock with something or a
+synchronous function that causes a
+deadlock because they simultaneously
+wait and it locks a machine up right
+think of the edge cases in this case I
+think zero we've covered it so in this
+case I feel comfortable saying that yes
+this is a group under addition raise
+your hand if you feel okay with that all
+right
+so now that everybody's comfortable and
+everybody's got over this original panic
+and everybody's like wow this guy I
+don't know what his point of all this is
+let me go ahead and let's go down the
+rabbit hole a little bit
+deeper
+consider the set s which is
+
+true and
+false consider a set that just has the
+Boolean values true and false anybody
+familiar with those can we go ahead and
+just abbreviate these as true sorry can
+we go ahead and abbreviate these as true
+and false is that okay why not right how
+about would anybody mind if I go with
+kind of a traditional programming
+language approach and let's just call
+this anybody got an
+idea zero and one is that okay as though
+we're looking at a copper wire where the
+voltage going high and to ground back
+and forth right so we have true and
+false does everybody agree that I'm
+going to consider this a set of either
+one or zero one being true zero being
+false every all clear on that and let's
+define the
+function
+define
+addition to be the exclusive
+
+or
+operation I want everybody to be quite
+clear here does everybody agree that I
+have now redefined Plus
+as something
+else how many you guys have had C++
+programming just because we typically
+Define I mean just because we typically
+Define addition to be one way can you
+actually create a class that has
+matrices can you add
+matrices can you add two sets I mean you
+could do that maybe you could just
+combine together maybe think of it as a
+union perhaps you can Define addition of
+anything you want as long as it's clear
+what you're doing right and C+ plus has
+anybody ever heard of operator
+overloading raise your hand if you've
+heard of that we can redefine addition
+to be some other things where we could
+take a matrix that's a class and a class
+and another Matrix and add them together
+and have a new class that's that we
+could overload the addition function
+right or the addition
+operation now consider the set true or
+false what the only two elements inside
+my
+set true and false what is my
+
+operation
+the exclusive or how many of you folks
+are familiar with
+that would it hurt if I go over it real
+fast to make sure everybody's on board
+how many of you remember back when you
+were younger and you had the
+multiplication tables where you had like
+1 through 12 here and then you had 1
+through 12 up here and then you kind of
+looked inside there to see what 6 * 7
+was you look at the intersection and
+there you got it does anybody remember
+that little table right you do not
+remember that or you do you do okay you
+do okay great so we got this table I'm
+going to make an operation table out of
+this so let's look at the operation
+table where I have 0 1 0 1 and I'm going
+to say this is my new addition operation
+by the way I defined
+it
+now 0 plus 0 in the way I've defined it
+is
+what exclusive or it follows very
+closely the or operation so if it's
+false and false what do I get
+here
+false if one of them if it's false and
+true what do I
+get
+true if I have true and false what do I
+get now typically under the or statement
+if either one of them is true that's
+enough to make it true the exclusive or
+takes it one step
+further except what is exclusive means
+what does it mean to be mutually
+exclusive you can only have one or the
+other right exclusive or is kind of like
+a M exclusive or where like it follows
+the ore operation until both of them are
+true and then it reverts back to
+what false that is the exclusive or for
+those of you guys that are in
+programming languages typically that's
+denoted by the carrot symbol how many
+you guys have ever used it
+before this is actually the way things
+are added inside of a processor the
+exclusive or operation right this is how
+when is anybody ever had a circuit class
+where you build an Adder an Adder
+circuit wasn't that essentially
+following an exclusive of or except it
+would carry the digit over right okay so
+if I'm not making sense by saying all
+that it's okay we won't need it but what
+is my operation for one what if I take 0
++ 0 what do I get zero what if I take 0
++ 1 what do I get one what if I take 1
+plus
+0o one what if I do 1 plus one zero so
+you see how we're kind of just on the
+edge of being a little bit abstract here
+right does everybody see that little
+abstraction we got doesn't follow
+doesn't make sense in the way that we
+were taught arithmetic growing up but
+it's the way that we have it is this a
+group number one do we Sorry do we have
+a
+set do we have a set is it non-empty do
+I have two elements in there true and
+false good do I have an operation that
+makes sense actually this is a complete
+operation because I gave you the table
+does everybody see that every
+combination is labeled in that table
+there we have two elements and we show
+pairwise how they work and so this is is
+a complete table so we have yes an
+operation that's completely defined on
+all
+elements what about
+closure if you make an operation table
+and you look inside the table does
+anybody see in the body of the table any
+values that are not inside the set do
+you guys agree that that's what that
+mean does anybody look in the table do
+you see anything in there that's not in
+their set so what does that
+automatically mean we have closure good
+now what about an inverse sorry I keep
+getting these out of order what about an
+identity now this is where we're a
+little bit abstract is there a number or
+is there a value in there where it
+appears that anytime it's paired up with
+something else it appears to return back
+that original value can I give you guys
+a hint if you ever make an operation
+table look down a column if it looks
+like a column is identical to the labels
+you've identified an identity does
+everybody see my label right here on the
+left hand side 01 does everybody
+everybody see I'm going to make a little
+dots everybody see how that's my label
+column does everybody see that this one
+mirrors
+it that implies an identity right does
+everybody see that it's true along the
+top as well here's my labels table and
+right here is my identity rule in both
+cases what appears to be the identity
+here false right is that true false
+false appear be the
+identity let it sink in make sure I'm
+saying it right it's false an identity
+here if I take that table okay what if I
+take false and add true to it under this
+operation table what do I get true what
+if I take true and I add false to it
+what do I get true so zero is the f is
+the additive identity here right yes it
+is is
+
+zero okay we have an identity now let me
+say one more thing
+inverses it's hard to see here isn't it
+does that make
+sense does everything have an inverse M
+meaning is there something I could add
+to it to go back to the addtive
+identity what do what do I add to zero
+to get zero based on this table what do
+I add to zero to get
+zero zero so that works out there's only
+one other element in the set right does
+everybody agree with that what do I add
+to one to get zero one does everybody
+see how they're what we call this if I'm
+not mistaken are things that were called
+involutions where they're own inverses
+does that make sense every okay with
+that so we do have inverses what did we
+conclude
+here
+that this is
+a it is a group and then we all scream
+out yes we've identified a set that's
+abstract and it is I love the excitement
+you need to be up here in the a roll
+right I like lots of excitement Haley
+what do you think about this excited
+great great he oh okay you're asking
+question
+okay yes every element has to have an
+inverse in fact you'll find out that
+it's Unique to every element does -3
+work as an inverse for any other value
+out than three under addition of real
+numbers so you'll find out that not only
+are inverses exist but they're unique to
+the element they're pawise unique to
+each other does that make sense so every
+element has to have an inverse and in
+this case do you see that it's so
+trivial that it's almost hard what do I
+add zero what do I add to zero to get
+zero under the table zero
+what do I add to one to get zero one
+does everybody see that
+great well it turns out that how many
+you guys have ever heard of the modu
+modular
+arithmetic this is essentially the table
+that you would get if you take numbers
+zero and one add them together and then
+take the remainder the modulus remainder
+of two what is 0 + 0 0 what is 0 + 1 1
+what is 1 + 0 1 what is 1 + 1 that is
+two but the remainder of two when you
+divide by two is zero this is exclusive
+or is actually modular arithmetic mod
+two how many guys see that
+now what is one divided two what is one
+what is the quotient of 1 divid two 0
+with a remainder of one
+right what is 1 + 1 that's two what is
+the quotient of two / two that's one but
+the remainder is zero so effectively
+that table is the set of remainders
+whenever you do the addition arithmetic
+with modular
+2 that make sense okay very
+important so it is a group
+yes what about how about we do this one
+what about s being the set of values
+false and true
+under the
+and
+operation under the and operation who
+knows what the classical symbol is in
+who knows what the classic symbol is for
+and double and S was exclusive or was
+that kind of carrot looking thing on the
+number six there right typically all
+right so let's go ahead and do a truth
+table we call it right so I'm going to
+make this
+table uh I'm going to say that our
+addition
+is the and
+operation we got our table the and
+operation means that it has it can only
+be true if both inputs are true does
+everybody remember that from the
+programming language if we have an if
+condition on our statement if we use a
+double Ampersand it must be the case
+that these two things are both high in
+order for it to be high on the output
+
+right we did exclusive or before yeah
+exclusive or where we we essentially
+have exclusivity where it's follows the
+or operation until both are set then it
+goes this one good way is if you have if
+you're ever using exclusive or exclusive
+or is a way to where you can flip if you
+have an input that you need to negate
+sometimes but you can only pass in one
+more input you could Define it to be
+exclusive ore whenever you pass this one
+in turn on the negate feature make the
+exclusive or and it'll flip this origin
+B in it's a trick that's common whenever
+you have kind of restricted inputs of
+sorts if that makes sense if I put in
+zero and zero in an and operation I get
+back zero good are you like a Bulan
+expert oh well awesome even better I
+like that what about zero and one we'll
+just let we'll just keep on with you
+zero okay what about one and zero oh
+good what about one and
+one okay so is this a group I tell you
+what can I get you guys all of you are
+sitting at a table could I get all of
+you to sit there and discuss whether
+this is a group or
+not okay let's go through our things for
+one who votes that we do have a set
+that's non
+empty do we have a set that's non empty
+we do by the way why do we have to have
+a set that's nonempty does anybody
+remember what I said about the empty set
+no matter what everything
+is true about the empty set it doesn't
+matter what goes on if you have an empty
+set you could prove that there's a green
+eyed line in there if you if you follow
+a certain procedure right everything is
+true about a set that contains nothing
+so why do I have to say it has to be a
+non-empty set is an empty set true is an
+empty set a
+group make Cas isly true because you
+can't show there's anything in there
+that fails it right all right so is it a
+non-empty set yes does it contain a
+well-defined operation we've completely
+defined it by giving EXP the table of
+all the interactions right so yes we do
+have an operation that's well defined on
+all elements what about do we have do we
+have uh
+closure that all you have to do is
+visually inspect the table do you see
+anything in there that's outside the
+set01 so we do have
+closure right anytime I say we have
+closure I feel like we're recovering
+from something sad or something but what
+about next the next one was an identity
+okay now this one serves a discussion
+but I don't know what our result will be
+let's let's go through it what do I add
+what is the identity is there anything
+in here that whenever I pair it with
+this I will always get the other value
+back what is our
+conversation look through the columns
+and if you see a column that matches the
+label column perfectly on both the
+horizontal row and the column you do
+have a
+what the number one is the ident here
+right does everybody see that what is 1
++
+0 0 what is 1 + one one what is 0 + 1 0o
+
+what is 1+
+0 zero do you see how one is acting like
+an identity go down through there does
+everybody see a column that mirrors the
+label
+column does everybody agree that this is
+our label column and that this mirrors
+it perfectly and and if we look at the
+horizontal row it's perfectly as well so
+do we have an identity yes it is the
+number one is the
+identity now what about inverses
+whoops do not assume that that was the
+right answer because I did that what
+about
+inverses huh let's look at the table we
+got to vote for no here let's see if
+this is right who else votes no we don't
+have an
+inverse what do I add under the and
+operation what do I add to zero What's
+the
+identity one what do I add to zero to
+get
+one notice that if zero is present it's
+zero no matter what both row and column
+raise your hand if you see
+that what do we say there is no
+
+inverse for zero under the and operation
+if you have a zero it makes it zero
+there is no operation that will get you
+to the number one there right how you
+guys understand this example so is this
+a
+group it is not a
+group it is not a
+group okay now let me give you guys this
+let me give you guys a thought
+yeah
+yeah yes you have when you're talking
+about identity if you have an identity
+it means that you have a column that
+would mirror the label column right if
+you think about what that's implying
+it's not it's not nothing deep it's
+actually just kind of straightforward
+like what do you get to that this well
+if it's in that column that's the
+identity right so if you have so here's
+another extent if you have a column that
+look look at the columns if you have a
+column that perfectly matches the the
+row column which is this one it means
+that must be the
+identity take a look up here do we have
+have one that perfectly matched the
+label column it's this one so which one
+is the
+identity this one does that make sense
+all right now we're at the point where I
+feel like this is as far as I want to go
+into groups let's go into what we call
+the abstract notion does everybody agree
+that when we have a set of numbers that
+we grew up knowing how to add them and
+multiply them does everybody agree that
+the real numbers are closed under
+addition but they are not
+closed
+under well let's say we we have sets
+let's back up does everybody agree that
+under addition the natural numbers are
+
+closed right does everybody agree that
+the integers are a group under addition
+but they are not a group under
+multiplication does that make sense so
+here let's introduce the idea of a
+ring a ring is defined where we have to
+have
+both addition
+and
+multiplication here's the
+rules
+R is a
+set
+R is a
+group
+under
+addition
+R
+needs an
+identity under
+
+multiplication n
+r let's make sure we get this
+
+NR plus I'm sorry
+multiplication
+distributes
+over
+addition by the way let's suppose this
+does everybody remember this that if I I
+have a * b + C does everybody remember
+what parentheses means parentheses means
+do that first if you have a
+ring and now remember plus and
+multiplication are defined abstractly
+here but we can represent it just in
+typical States if I take a set and I
+first add B and C together and then I
+take that value and multiply it with a
+does everybody see what I'm saying there
+I first add B and C together under the
+ring
+operation then I take that value I
+multiply it by a with multiplication
+under the ring that would be the same
+thing as if I took a multiplied it with
+B
+plus a and multiplying it with C does
+everybody remember how this distributes
+just in our regular arithmetic as we
+grew up knowing it does everybody agree
+with
+
+this
+oh this is
+multiplication the the dot sorry that's
+a good point multiplication distributes
+over addition okay now what I want us to
+consider that I want you guys to go home
+and consider is
+consider
+s where 0er and
+one are elements of the set I want you
+guys to be clear about something there's
+one more thing there's actually one more
+condition here an R that's not true for
+all sets it needs to be something we
+call a billion but I won't hold you to
+that one a billion means that the
+elements commute matrices can form a
+group and notice that matrices don't
+commute the order of operation the if
+you add if you multiply two matrices
+it's different depending on which way
+you multiply them a * B is different
+than b * a we'll leave you to that one
+let's define s to be the set of values
+true or false addition ition is the
+exclusive or function that I defined
+earlier multiplication is the and
+operation I defined
+earlier let's see if you guys can make
+sure that you understand that this is a
+ring this is a
+ring
+
+specifically this is
+gf2 it's the gawa FI of two elements and
+this is how
+computers
+typically do
+
+arithmetic in multiplication in binary
+how does how how does it work it follows
+the and operation how does a addition
+work in binary it follows the exclusive
+or operation does that make sense raise
+your hand if you follow what I've tried
+to arrive at here is kind of the finale
+how do computers G
+gf2 how do computers add they follow
+
+the
+no so we breaking up the ring exor how
+do computers add how do typically binary
+devices add they follow the exclusive or
+operation how do computers typically
+multiply they follow the and operation
+together just like we have like real
+numbers where we can add and multiply
+them to do all the arithmetic that we
+need don't computers need to have that
+same completeness to where it has a
+bitstream that it may need to add and
+multiply in order for everything in the
+world to work out the conversion of
+bases the ability to to work no matter
+what we're doing under you have to have
+a ring to find the integers alone aren't
+complete enough the real numbers are
+complete enough does that make sense
+everybody needs to realize that under a
+ring inverses are not necessary under
+the multiplication does that make sense
+what's the only group it's a group under
+addition the only conditions we have on
+the multiplication is that it
+distributes over the
+addition and we have an identity
+right is that okay in more abstract
+mathematics they'll dismiss one or two
+of those things but that's for the most
+part it on the next class if you guys
+don't mind on the next lecture I'm going
+to prove to you guys all the step have
+to show that gf2 is a ring and then
+we're done with this entire topic final
+okay does anybody feel like this is just
+too
+terrible so what next next lecture we're
+going to do what we're going to
+basically show that gf2 fits this
+definition and then we're done with it
+okay all right no
+problem
